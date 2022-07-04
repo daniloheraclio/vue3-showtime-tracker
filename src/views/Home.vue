@@ -1,6 +1,6 @@
 <template>
   <main v-if="isLoggedIn()">
-    <h1 class="text-3xl font-bold underline text-red-500">Home view</h1>
+    <h1 class="text-3xl font-bold underline text-red-500 dark:text-blue-800">Home view</h1>
     <p>USER: {{ userStore.user.user_metadata.name }}</p>
     <button @click="handleSignout">Logout</button>
     <!-- <HeadlessModal modalTitle="modal title papai">
