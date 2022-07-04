@@ -8,6 +8,7 @@
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/register">Register</RouterLink>
+      <Switch @toggle="handleToggleDarkLightMode" />
     </nav>
   </header>
 
@@ -15,14 +16,13 @@
 </template>
 
 <script setup>
+import { useColorMode } from '@vueuse/core';
 import { RouterLink, RouterView } from 'vue-router';
-// import { store } from './store';
-// import { supabase } from './supabase';
-// import Auth from './components/Auth.vue';
-// import Profile from './components/Profile.vue';
+import Switch from '@/components/Switch.vue';
 
-// store.user = supabase.auth.user();
-// supabase.auth.onAuthStateChange((_, session) => {
-//   store.user = session.user;
-// });
+const mode = useColorMode();
+
+const handleToggleDarkLightMode = (isDarkMode) => {
+  mode.value = isDarkMode ? 'dark' : 'light';
+};
 </script>
