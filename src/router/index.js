@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import useAuthUser from '@/composables/useAuthUser';
-import useSupabase from '@/composables/UseSupabase';
+import useSupabase from '@/composables/useSupabase';
 import { useUserStore } from '@/stores/useUserStore';
 import Home from '../views/Home.vue';
 
