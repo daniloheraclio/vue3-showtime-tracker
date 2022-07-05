@@ -1,5 +1,5 @@
 // import { ref } from 'vue';
-import useSupabase from '@/composables/UseSupabase';
+import useSupabase from '@/composables/useSupabase';
 import { useUserStore } from '@/stores/useUserStore';
 import { useRouter } from 'vue-router';
 
